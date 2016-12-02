@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>albert latham</title>
+    <link>http://albertlatham.com/tags/hardware-hacking/index.xml</link>
+    <description>Recent content on albert latham</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Released under the MIT license.</copyright>
+    <atom:link href="/tags/hardware-hacking/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Duplicator I3 Auto-Bed Leveling with a Smoothieboard.</title>
+      <link>http://albertlatham.com/post/i3-printer-modifications/adding-auto-bed-leveling/</link>
+      <pubDate>Mon, 15 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://albertlatham.com/post/i3-printer-modifications/adding-auto-bed-leveling/</guid>
+      <description>
+
+&lt;h1 id=&#34;thank-you-for-the-video-thomas&#34;&gt;Thank you for the video, Thomas.&lt;/h1&gt;
+
+&lt;p&gt;I found this video quite a while ago and I decided I&amp;rsquo;d give auto bed-tramming (bed-leveling) a go.&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/EcGFLwj0pnA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+
+
+&lt;h1 id=&#34;final-battle-with-a-melzi&#34;&gt;Final battle with a Melzi.&lt;/h1&gt;
+
+&lt;p&gt;A cursory glance at the Melzi&amp;rsquo;s &lt;a href=&#34;http://reprap.org/wiki/Melzi&#34;&gt;page&lt;/a&gt; on the Reprap website will only begin to illuminate the issues one will face if they attempt to modify the firmware on board in any manner. The Duplicator I3&amp;rsquo;s controller ships with Repetier which didn&amp;rsquo;t support any sort of auto bed-leveling at the time I tried to make this work.&lt;/p&gt;
+
+&lt;p&gt;So I figured I&amp;rsquo;d flash Marlin, which does support auto bed-leveling. That was a nightmare that required a specific version of Arduino, special hardware configurations for the Sanguino support, and other things that were nightmarey.&lt;/p&gt;
+
+&lt;p&gt;I gave up when I was about 30 hours in and bought a Smoothieboard.&lt;/p&gt;
+
+&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
+
+&lt;p&gt;I think its useful to look at the whole modification before looking at the grimy details.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;the-big-picture.jpg&#34; alt=&#34;the whole enchilada&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The most important things to note about this setup are the locations of the Z-endstop and the inductive sensor.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;The inductive sensor takes the place of the stock fan. There&amp;rsquo;s a link to the rather uninspired adapter I modeled below.&lt;/li&gt;
+&lt;li&gt;The Z-endstop has moved from Z-min on the lower left to Z-max on the upper right. I&amp;rsquo;ve included a link to the friction fit adapter below.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&#34;parts&#34;&gt;Parts&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.ebay.com/sch/items/?_nkw=LJ12A3-4-Z/BX&amp;amp;_sacat=&amp;amp;_ex_kw=&amp;amp;_mPrRngCbx=1&amp;amp;_udlo=&amp;amp;_udhi=&amp;amp;_sop=12&amp;amp;_fpos=&amp;amp;_fspt=1&amp;amp;_sadis=&amp;amp;LH_CAds=&amp;amp;rmvSB=true&#34;&gt;An inductive sensor.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Two 10k resistors for 12V systems, or 8.1k and 22k for 24V systems.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;inductive_self_leveling_adapter.stl&#34;&gt;A handy inductive sensor mount.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;zmount_frame_bracket_high_right.stl&#34;&gt;A friction fit adapter for the new location of the Z-endstop.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;wiring-it-up&#34;&gt;Wiring It Up&lt;/h1&gt;
+
+&lt;p&gt;Follow Tom&amp;rsquo;s directions for setting up the inductive probe and then you&amp;rsquo;re ready to plug it into the Smoothieboard.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;sensor_wired_up.png&#34; alt=&#34;inductive sensor wired to smoothieboard&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you look &lt;a href=&#34;http://smoothieware.org/pinout&#34;&gt;here&lt;/a&gt; you&amp;rsquo;ll see that&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;GPIO P1.22 is the sensor output.&lt;/li&gt;
+&lt;li&gt;GND at Z-min just because its convenient. Any ground will do.&lt;/li&gt;
+&lt;li&gt;12V power the inductive sensor.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The complete instructions for setting up the Z-probe for the Smoothieboard can be found &lt;a href=&#34;http://smoothieware.org/zprobe&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&#34;relevant-smoothieboard-configuration&#34;&gt;Relevant Smoothieboard Configuration&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;## Endstops
+endstops_enable                              true             # the endstop module is enabled by default and can be disabled here
+#corexy_homing                               false            # set to true if homing on a hbot or corexy
+alpha_min_endstop                            1.24^!           # add a ! to invert if endstop is NO connected to ground
+alpha_max_endstop                            nc               # NOTE set to nc if this is not installed
+alpha_homing_direction                       home_to_min      # or set to home_to_max and set alpha_max
+alpha_min                                    0                # this gets loaded after homing when home_to_min is set
+alpha_max                                    200              # this gets loaded after homing when home_to_max is set
+beta_min_endstop                             1.26^!           #
+beta_max_endstop                             nc               #
+beta_homing_direction                        home_to_min      #
+beta_min                                     0                #
+beta_max                                     200              #
+gamma_min_endstop                            nc               #
+gamma_max_endstop                            1.29^!           #
+gamma_homing_direction                       home_to_max      #
+gamma_min                                    0                #
+gamma_max                                    145.1            #
+
+## Z-probe
+zprobe.enable                                true            # set to true to enable a zprobe
+zprobe.probe_pin                             1.22^!          # pin probe is attached to if NC remove the !
+zprobe.slow_feedrate                         5               # mm/sec probe feed rate
+#zprobe.debounce_count                       100             # set if noisy
+zprobe.fast_feedrate                         100             # move feedrate mm/sec
+zprobe.probe_height                          5               # how much above bed to start probe
+#gamma_min_endstop                           nc              # normally 1.28. Change to nc to prevent conflict,
+
+# associated with zprobe the leveling strategy to use
+leveling-strategy.three-point-leveling.enable         true        # a leveling strategy that probes three points to define a plane and keeps the Z parallel to that plane
+leveling-strategy.three-point-leveling.point1         100.0,0.0   # the first probe point (x,y) optional may be defined with M557
+leveling-strategy.three-point-leveling.point2         173.0,160.0 # the second probe point (x,y)
+leveling-strategy.three-point-leveling.point3         0.0,160.0   # the third probe point (x,y)
+leveling-strategy.three-point-leveling.home_first     true        # home the XY axis before probing
+leveling-strategy.three-point-leveling.tolerance      0.03        # the probe tolerance in mm, anything less that this will be ignored, default is 0.03mm
+leveling-strategy.three-point-leveling.probe_offsets  -27,-40,2.24       # the probe offsets from nozzle, must be x,y,z, default is no offset
+leveling-strategy.three-point-leveling.save_plane     true       # set to true to allow the bed plane to be saved with M500 default is false
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Please don&amp;rsquo;t just copy this blindly. In fact, not all the kinks have been ironed out. I&amp;rsquo;ve still some issues with bed clearance that I haven&amp;rsquo;t tracked down yet.&lt;/p&gt;
+
+&lt;p&gt;&amp;lsquo;gamma_max&amp;rsquo; is the Z-max endstop. When setting the value (in mm) make sure to jog your printer as high as it will go and then measure the distance from the nozzle tip to the bed. Subtract a few millimeters and then dial in the exact distance to use. This way you should be able to avoid crashing into your bed like I did. A lot.&lt;/p&gt;
+
+&lt;h1 id=&#34;on-boot-gcode&#34;&gt;on_boot.gcode&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;G28 Z ; home z axis
+G32 ; level bed (includes x and y axis home)
+G0 X127 Y40 ; move to set nozzle height
+G92 Z6.1 ; set nozzle height
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This automatically levels the printer every time it turns on. There&amp;rsquo;s an issue that needs to be sorted where the absolute zero coordinates are not the same as the bed leveled coordinates that I haven&amp;rsquo;t managed to figure out yet. At this point I restart the printer if I need to print another object. This isn&amp;rsquo;t ideal, but again, it works.&lt;/p&gt;
+
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; final animation of auto bed-level routine&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

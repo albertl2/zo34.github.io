@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>albert latham</title>
+    <link>http://albertlatham.com/tags/electrical-engineering/index.xml</link>
+    <description>Recent content on albert latham</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Released under the MIT license.</copyright>
+    <atom:link href="/tags/electrical-engineering/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Beginning Circuits Analysis Course Material Outline</title>
+      <link>http://albertlatham.com/post/notes/CIRC1_Flashcard_Prep/</link>
+      <pubDate>Thu, 01 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://albertlatham.com/post/notes/CIRC1_Flashcard_Prep/</guid>
+      <description>
+
+&lt;h1 id=&#34;what-needs-to-happen&#34;&gt;What needs to happen?&lt;/h1&gt;
+
+&lt;p&gt;Need to answer:
+    Theory:
+        What is it?
+        How does it work?
+    Practice:
+        Homework problems
+        Possible permutations&lt;/p&gt;
+
+&lt;h1 id=&#34;circuits-1-outline&#34;&gt;Circuits 1 Outline&lt;/h1&gt;
+
+&lt;h2 id=&#34;units-and-scales&#34;&gt;Units and Scales&lt;/h2&gt;
+
+&lt;h3 id=&#34;todo-dimensional-analysis&#34;&gt;TODO: Dimensional Analysis&lt;/h3&gt;
+
+&lt;h3 id=&#34;international-system-of-units-si&#34;&gt;International System of Units (SI)&lt;/h3&gt;
+
+&lt;p&gt;def: seven basic units upon which all others are based&lt;/p&gt;
+
+&lt;h4 id=&#34;units&#34;&gt;Units&lt;/h4&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;Base Quantity&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Name&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Symbol&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;length&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;meter&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;m&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;mass&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;kilogram&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;kg&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;time&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;second&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;s&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;electric current&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;ampere&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;A&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;thermodynamic temperature&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;kelvin&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;k&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;amount of substance&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;mole&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;mol&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;luminous intensity&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;candela&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;cd&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h4 id=&#34;prefixes&#34;&gt;Prefixes&lt;/h4&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;Factor&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Name&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Symbol&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;femto&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;f&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;10^-15&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;pico&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;p&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;10^-12&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;nano&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;n&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;10^-9&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;micro&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;μ&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;10^-6&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;milli&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;m&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;10^-3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;centi&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;c&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;10^-2&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;kilo&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;k&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;10^3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;mega&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;M&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;10^6&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;giga&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;G&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;10^9&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;tera&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;T&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;10^12&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;charge-current-voltage-power&#34;&gt;Charge, Current, Voltage, Power&lt;/h2&gt;
+
+&lt;h3 id=&#34;todo-nomenclature-disambiguation&#34;&gt;TODO: Nomenclature Disambiguation&lt;/h3&gt;
+
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Describe the difference between unit, dimension, and symbol in terms of dimensional analysis.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;charge&#34;&gt;Charge&lt;/h3&gt;
+
+&lt;p&gt;def: A physical property of matter that causes it to experience a force when placed in an electromagnetic field.&lt;/p&gt;
+
+&lt;p&gt;unit: Coulombs
+dimension: C
+symbol: Q or &lt;em&gt;q&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;One Coulomb is the &lt;em&gt;magnitude&lt;/em&gt; of charge of $ 6.242*10^18 * electrons or protons.&lt;/p&gt;
+
+&lt;p&gt;$$ 1C = 1A*s = 1F*V $$&lt;/p&gt;
+
+&lt;h3 id=&#34;current&#34;&gt;Current&lt;/h3&gt;
+
+&lt;p&gt;def: The flow of electrical charge (understood as the movement of electrons).&lt;/p&gt;
+
+&lt;p&gt;unit: Ampere
+dimension: A
+symbol: I or &lt;em&gt;i&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;$$ 1A = 1C / s $$ (as above)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;NOTE: *amp-hours* is another way to write the amount of charge a battery has. Just do a little algebra and see.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;voltage&#34;&gt;Voltage&lt;/h3&gt;
+
+&lt;p&gt;def: the electric potential energy between two points per unit electric charge.&lt;/p&gt;
+
+&lt;p&gt;unit: Volt
+dimension: V
+symbol: V or &lt;em&gt;v&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;$$ V = \frac{ N * M}{C} = \frac{ kg * m^2 }{ A *s^3 } $$&lt;/p&gt;
+
+&lt;h3 id=&#34;power&#34;&gt;Power&lt;/h3&gt;
+
+&lt;p&gt;def: Literally power is change in energy over change in time, in this instance it is the rate at which electrical energy is transferred by a circuit.&lt;/p&gt;
+
+&lt;p&gt;unit: Watts
+dimension: W
+symbol: P&lt;/p&gt;
+
+&lt;p&gt;$$ P = V * I = \frac{V^2}{R} = I^2 * R $$&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Peak Power&lt;/strong&gt;: the rate of energy flow a) at its peak, or b) over the time of discharge (ex, a PWM signal).&lt;/p&gt;
+
+&lt;h2 id=&#34;todo-resistance&#34;&gt;TODO: Resistance&lt;/h2&gt;
+
+&lt;h2 id=&#34;passive-sign-convention&#34;&gt;Passive Sign Convention&lt;/h2&gt;
+
+&lt;p&gt;def: an arbitrary and universally accepted method of labeling potential and current in an electrical circuit.&lt;/p&gt;
+
+&lt;h3 id=&#34;reference-directions-for-current-voltage-and-power&#34;&gt;Reference Directions For Current, Voltage, and Power&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;180px-Passive_sign_convention.png&#34; alt=&#34;passive sign convention reference directions&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The reference directions are given for a passive device that is assumed to be &amp;lsquo;consuming&amp;rsquo; or &amp;lsquo;dissipating&amp;rsquo; power. In this instance $p=v*i$ and $r=v/i$. For those signs, current flows from the positive terminal of the device to the negative terminal and potential is higher on the positive side.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;Electric_load_animation.gif&#34; alt=&#34;passive sign convention, load directions&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;For a device that is a load charge moves through an e-field gradient from a higher energy state, positive, to a lower energy state, negative.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;Electric_power_source_animation.gif&#34; alt=&#34;passive sign convention, load directions&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;For a device that is a &amp;lsquo;source&amp;rsquo; the charge is forced in the opposite direction, against the e-field gradient. The signs in this case are opposite: $p=-v*i$ and $r=-v/i$.&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Source&lt;/th&gt;
+&lt;th&gt;Power&lt;/th&gt;
+&lt;th&gt;Resistance&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;load&lt;/td&gt;
+&lt;td&gt;p &amp;gt; 0&lt;/td&gt;
+&lt;td&gt;r &amp;gt; 0&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;source&lt;/td&gt;
+&lt;td&gt;p &amp;lt; 0&lt;/td&gt;
+&lt;td&gt;r &amp;lt; 0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;ohm-s-law&#34;&gt;Ohm&amp;rsquo;s Law&lt;/h2&gt;
+
+&lt;p&gt;$$ V = I * R $$&lt;/p&gt;
+
+&lt;h2 id=&#34;sources-nodes-paths-loops-and-branches&#34;&gt;Sources, Nodes, Paths, Loops, and Branches&lt;/h2&gt;
+
+&lt;h3 id=&#34;sources&#34;&gt;Sources&lt;/h3&gt;
+
+&lt;p&gt;These sources are considered &amp;ldquo;ideal&amp;rdquo; and are labeled as such. More realistic representations will follow.&lt;/p&gt;
+
+&lt;h4 id=&#34;independent-voltage-source&#34;&gt;Independent Voltage Source&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;Voltage_Source.png&#34; alt=&#34;ideal voltage source&#34; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;independent-current-source&#34;&gt;Independent Current Source&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;Current_Source.png&#34; alt=&#34;ideal current source&#34; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;dependent-voltage-source&#34;&gt;Dependent Voltage Source&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;Voltage_Source_(Controlled).png&#34; alt=&#34;ideal dependent voltage source&#34; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;dependent-current-source&#34;&gt;Dependent Current Source&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;Current_Source_(Controlled).png&#34; alt=&#34;ideal dependent current source&#34; /&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;voltage-controlled-voltage-source&#34;&gt;Voltage Controlled Voltage Source&lt;/h5&gt;
+
+&lt;p&gt;&lt;img src=&#34;339px-Voltage_controlled_voltage_source_circuit.png&#34; alt=&#34;voltage controlled voltage source&#34; /&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;voltage-controlled-current-source&#34;&gt;Voltage Controlled Current Source&lt;/h5&gt;
+
+&lt;p&gt;&lt;img src=&#34;200px-Voltage_controlled_current_source.png&#34; alt=&#34;voltage controlled current source&#34; /&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;current-controlled-current-source&#34;&gt;Current Controlled Current Source&lt;/h5&gt;
+
+&lt;p&gt;&lt;img src=&#34;332px-Current_controlled_current_source.png&#34; alt=&#34;current controlled current source&#34; /&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;current-controlled-voltage-source&#34;&gt;Current Controlled Voltage Source&lt;/h5&gt;
+
+&lt;p&gt;&lt;img src=&#34;334px-Current_controlled_voltage_source.png&#34; alt=&#34;current controlled voltage source&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;branches&#34;&gt;Branches&lt;/h3&gt;
+
+&lt;p&gt;def: any single element withing a circuit&lt;/p&gt;
+
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; add some examples from homeworks&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;nodes&#34;&gt;Nodes&lt;/h3&gt;
+
+&lt;p&gt;def: Nodes connect branches (elements) together.&lt;/p&gt;
+
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; add some examples from homeworks&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;paths&#34;&gt;Paths&lt;/h3&gt;
+
+&lt;p&gt;def: any combination of elements, nodes, and branches&lt;/p&gt;
+
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; add some examples from homeworks&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;loops&#34;&gt;Loops&lt;/h3&gt;
+
+&lt;p&gt;def: any closed path in a circuit&lt;/p&gt;
+
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; add some examples from homeworks&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;kirchoff-s-laws&#34;&gt;Kirchoff&amp;rsquo;s Laws&lt;/h2&gt;
+
+&lt;h3 id=&#34;kirchoff-s-voltage-law&#34;&gt;Kirchoff&amp;rsquo;s Voltage Law&lt;/h3&gt;
+
+&lt;h3 id=&#34;kirchoff-s-current-law&#34;&gt;Kirchoff&amp;rsquo;s Current Law&lt;/h3&gt;
+
+&lt;h2 id=&#34;series-and-parallel&#34;&gt;Series and Parallel&lt;/h2&gt;
+
+&lt;h3 id=&#34;resistors-in-parallel&#34;&gt;Resistors in Parallel&lt;/h3&gt;
+
+&lt;h3 id=&#34;resistors-in-series&#34;&gt;Resistors in Series&lt;/h3&gt;
+
+&lt;h3 id=&#34;sources-in-series&#34;&gt;Sources in Series&lt;/h3&gt;
+
+&lt;h3 id=&#34;sources-in-parallel&#34;&gt;Sources in Parallel&lt;/h3&gt;
+
+&lt;h2 id=&#34;voltage-and-current-division&#34;&gt;Voltage and Current Division&lt;/h2&gt;
+
+&lt;h2 id=&#34;nodal-voltage-analysis&#34;&gt;Nodal Voltage Analysis&lt;/h2&gt;
+
+&lt;h2 id=&#34;mesh-current-analysis&#34;&gt;Mesh Current Analysis&lt;/h2&gt;
+
+&lt;h2 id=&#34;linearity-and-superposition&#34;&gt;Linearity and Superposition&lt;/h2&gt;
+
+&lt;h2 id=&#34;source-transformations&#34;&gt;Source Transformations&lt;/h2&gt;
+
+&lt;h2 id=&#34;equivalent-circuits&#34;&gt;Equivalent Circuits&lt;/h2&gt;
+
+&lt;h3 id=&#34;thevenin-equivalent&#34;&gt;Thevenin Equivalent&lt;/h3&gt;
+
+&lt;h3 id=&#34;norton-equivalents&#34;&gt;Norton Equivalents&lt;/h3&gt;
+
+&lt;h2 id=&#34;operational-amplifiers&#34;&gt;Operational Amplifiers&lt;/h2&gt;
+
+&lt;h3 id=&#34;ideal-op-amps&#34;&gt;Ideal Op-Amps&lt;/h3&gt;
+
+&lt;h3 id=&#34;non-ideal-op-amps&#34;&gt;Non-Ideal Op-Amps&lt;/h3&gt;
+
+&lt;h3 id=&#34;inverting-amplifier&#34;&gt;Inverting Amplifier&lt;/h3&gt;
+
+&lt;h3 id=&#34;non-inverting-amplifier&#34;&gt;Non-Inverting Amplifier&lt;/h3&gt;
+
+&lt;h3 id=&#34;voltage-follower-buffer&#34;&gt;Voltage Follower (Buffer)&lt;/h3&gt;
+
+&lt;h3 id=&#34;summing-amplifier&#34;&gt;Summing Amplifier&lt;/h3&gt;
+
+&lt;h3 id=&#34;difference-amplifier&#34;&gt;Difference Amplifier&lt;/h3&gt;
+
+&lt;h3 id=&#34;common-mode-rejection&#34;&gt;Common Mode Rejection&lt;/h3&gt;
+
+&lt;h3 id=&#34;input-offset-voltage&#34;&gt;Input Offset Voltage&lt;/h3&gt;
+
+&lt;h3 id=&#34;slew-rate&#34;&gt;Slew Rate&lt;/h3&gt;
+
+&lt;h2 id=&#34;capacitors&#34;&gt;Capacitors&lt;/h2&gt;
+
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; symbol&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; current &amp;gt; voltage relationship&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; integral voltage &amp;gt; current relationship&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; energy storage&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; in series and parallel&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; characteristics of an ideal capacitor&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;inductors&#34;&gt;Inductors&lt;/h2&gt;
+
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; symbol&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; voltage &amp;gt; current relationship&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; integral current-voltage relationship&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; energy storage&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; in series and parallel&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; characteristics of an ideal inductor&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;inductor-and-capacitor-combinations&#34;&gt;Inductor and Capacitor Combinations&lt;/h2&gt;
+
+&lt;h2 id=&#34;complex-numbers&#34;&gt;Complex Numbers&lt;/h2&gt;
+
+&lt;h2 id=&#34;sinusoids&#34;&gt;Sinusoids&lt;/h2&gt;
+
+&lt;h2 id=&#34;phasor-circuits&#34;&gt;Phasor Circuits&lt;/h2&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

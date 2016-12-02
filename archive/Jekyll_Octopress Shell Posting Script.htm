@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Jekyll/Octopress Shell Posting Script</title>
+  <meta name="description" content="I like automating things and I happen to like trying to do things I have no clue how to do. This little project seems like it was a bit of both. Prior to the...">
+
+  <link rel="stylesheet" href="Jekyll_Octopress%20Shell%20Posting%20Script_files/main.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/basilisk.css">
+  <link rel="canonical" href="http://albertlatham.com/octopress/jekyll-octopress-shell-posting-script">
+  <link rel="alternate" type="application/rss+xml" title="Student, Breaker, Maker" href="http://albertlatham.com/feed.xml">
+</head>
+
+
+  <body>
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Jekyll/Octopress Shell Posting Script</h1>
+    <p class="post-meta">Mar 1, 2015</p>
+  </header>
+
+  <article class="post-content">
+    <p>I like automating things and I happen to like trying to do things
+ I have no clue how to do. This little project seems like it was a bit 
+of both. Prior to the development of this script I have had literally 
+nothing but second and third-hand exposure to the Ruby language and I 
+had no working experience with the Octopress or Jekyll static web 
+frameworks.</p>
+
+<p>So, in a fit of desire, I decided that I ought to make a website 
+using Octopress 2. Then I found Octopress and decided that I ought to 
+make a website with an even less mature and less well documented engine.
+ After all, what could go wrong?</p>
+
+<p>While working with Octopress 2 I found an excellent script by Hilton Lipschitz<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>
+ that automated the post creation and preview process. This worked well 
+for Ruby 1.9 or Ruby 1.8 and Octopress 2. It did require some 
+modification to work successfully with Octopress 3. Following is the 
+original code, then my modified code, and relevant comments and 
+observations I made while modifying the code. Thank you, Mr. Lipschitz 
+for an excellent foundation to build on.</p>
+
+<h1 id="original-code">Original Code</h1>
+<p>This code is found on hiltmon.com<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>.</p>
+
+<h1 id="new-code">New Code</h1>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="lineno"> 1</span> <span class="c1">#! /usr/bin/ruby</span>
+<span class="lineno"> 2</span> 
+<span class="lineno"> 3</span> <span class="c1"># post.rb</span>
+<span class="lineno"> 4</span> <span class="c1"># Albert Latham, adapted from Hilton Lipschitz (http://hiltmon.com) @hiltmon</span>
+<span class="lineno"> 5</span> <span class="c1"># @ http://hiltmon.com/blog/2012/07/18/octopress-post-and-publish/</span>
+<span class="lineno"> 6</span> <span class="c1"># for Octopress 3</span>
+<span class="lineno"> 7</span> <span class="c1">#</span>
+<span class="lineno"> 8</span> <span class="c1"># Use and modify freely, attribution appreciated</span>
+<span class="lineno"> 9</span> <span class="c1">#</span>
+<span class="lineno">10</span> <span class="c1"># Create a new Octopress post, isolate it, generate the site,</span>
+<span class="lineno">11</span> <span class="c1"># launch the user's text editor with the file,</span>
+<span class="lineno">12</span> <span class="c1"># and leave a preview thread running.</span>
+<span class="lineno">13</span> <span class="c1">#</span>
+<span class="lineno">14</span> <span class="c1"># Must be run in the octopress site root folder.</span>
+<span class="lineno">15</span> <span class="c1">#</span>
+<span class="lineno">16</span> <span class="c1"># Usage</span>
+<span class="lineno">17</span> <span class="c1">#   usage goes here</span>
+<span class="lineno">18</span> <span class="c1">#</span>
+<span class="lineno">19</span> <span class="c1"># Note: maybe use quotes in the params?</span>
+<span class="lineno">20</span> 
+<span class="lineno">21</span> <span class="n">post_title</span> <span class="o">=</span> <span class="no">ARGV</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">' '</span><span class="p">)</span>
+<span class="lineno">22</span> <span class="n">editor</span> <span class="o">=</span> <span class="no">ENV</span><span class="o">[</span><span class="s1">'EDITOR'</span><span class="o">]</span>
+<span class="lineno">23</span> 
+<span class="lineno">24</span> <span class="nb">puts</span> <span class="s2">":: Editor = </span><span class="si">#{</span><span class="n">editor</span><span class="si">}</span><span class="s2">"</span>
+<span class="lineno">25</span> 
+<span class="lineno">26</span> <span class="c1"># Create the post</span>
+<span class="lineno">27</span> <span class="nb">puts</span> <span class="s2">":: octopress new post </span><span class="se">\"</span><span class="si">#{</span><span class="n">post_title</span><span class="si">}</span><span class="se">\"</span><span class="s2">"</span>
+<span class="lineno">28</span> <span class="n">process</span> <span class="o">=</span> <span class="sb">`octopress new post "</span><span class="si">#{</span><span class="n">post_title</span><span class="si">}</span><span class="sb">"`</span>
+<span class="lineno">29</span> <span class="nb">puts</span> <span class="s2">"</span><span class="si">#{</span><span class="n">process</span><span class="si">}</span><span class="s2">"</span>
+<span class="lineno">30</span> 
+<span class="lineno">31</span> <span class="c1"># Parse out the generated filename</span>
+<span class="lineno">32</span> <span class="n">file_key</span> <span class="o">=</span> <span class="kp">nil</span>
+<span class="lineno">33</span> <span class="n">process</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">line</span><span class="o">|</span>
+<span class="lineno">34</span> <span class="c1"># next unless line == /Error/</span>
+<span class="lineno">35</span>     <span class="sb">`</span><span class="si">#{</span><span class="n">editor</span><span class="si">}</span><span class="sb"> </span><span class="si">#{</span><span class="n">line</span><span class="si">}</span><span class="sb">`</span>
+<span class="lineno">36</span>     <span class="n">path</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">'_posts/'</span><span class="p">)</span><span class="o">[</span><span class="mi">1</span><span class="o">].</span><span class="n">split</span><span class="p">(</span><span class="s1">'.markdown'</span><span class="p">)</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span>
+<span class="lineno">37</span>     <span class="nb">puts</span> <span class="s2">"path = </span><span class="si">#{</span><span class="n">path</span><span class="si">}</span><span class="s2">"</span>
+<span class="lineno">38</span>     <span class="n">file_key</span> <span class="o">=</span> <span class="n">path</span><span class="o">.</span><span class="n">chomp</span>
+<span class="lineno">39</span> <span class="k">end</span>
+<span class="lineno">40</span> 
+<span class="lineno">41</span> <span class="c1"># Isolate, generate, and preview</span>
+<span class="lineno">42</span> <span class="k">unless</span> <span class="n">file_key</span><span class="o">.</span><span class="n">nil?</span>
+<span class="lineno">43</span>     <span class="nb">puts</span> <span class="s2">":: octo isolationization </span><span class="si">#{</span><span class="n">file_key</span><span class="si">}</span><span class="s2">!!!"</span>
+<span class="lineno">44</span>     <span class="sb">`octopress isolate </span><span class="si">#{</span><span class="n">file_key</span><span class="si">}</span><span class="sb">`</span>
+<span class="lineno">45</span>     <span class="nb">puts</span> <span class="s2">":: jekyll serve and watch"</span>
+<span class="lineno">46</span>     <span class="sb">`jekyll serve --watch`</span>
+<span class="lineno">47</span> <span class="k">end</span></code></pre></div>
+
+<h1 id="where-im-stuck">Where I’m Stuck</h1>
+<p>You’ll notice that line 34 in the above code is commented out. It 
+seems that my method of catching Octopress’ 3.0 errors is somewhat 
+flawed. Uncommented the script fails to make it past line 34. I’m unsure
+ as to how I ought to catch the output and parse it effectively.</p>
+
+<h1 id="where-the-script-is-headed">Where The Script is Headed</h1>
+<p>I’ve no idea what I’ll be adding to this. It has crossed my mind that
+ I could add a state machine to catch arguments and so begin to play 
+with drafts, pages, and other custom formats; but at that point I’m just
+ recreating Octopress and Jekyll to some extent (which I would rather 
+not do).</p>
+
+<h2 id="links-that-helped-me-out">Links That Helped Me Out</h2>
+<ul>
+  <li><a href="http://jekyllrb.com/docs/usage/">http://jekyllrb.com/docs/usage/</a> </li>
+  <li><a href="http://stackoverflow.com/questions/21694744/ruby-nomethoderror-undefined-method-for-nilnilclass">http://stackoverflow.com/questions/21694744/ruby-nomethoderror-undefined-method-for-nilnilclass</a></li>
+  <li><a href="http://stackoverflow.com/questions/18721178/syntax-error-syntax-error-unexpected-end-of-input-expecting-keyword-end-synt">http://stackoverflow.com/questions/18721178/syntax-error-syntax-error-unexpected-end-of-input-expecting-keyword-end-synt</a></li>
+</ul>
+
+<h1 id="footnotes">Footnotes</h1>
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>http://hiltmon.com <a href="#fnref:1" class="reversefootnote">↩</a></p>
+    </li>
+    <li id="fn:2">
+      <p>http://hiltmon.com/blog/2012/07/18/octopress-post-and-publish/ <a href="#fnref:2" class="reversefootnote">↩</a></p>
+    </li>
+  </ol>
+</div>
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Student, Breaker, Maker</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>Student, Breaker, Maker</li>
+          <li><a href="mailto:albert.latham@aggiemail.usu.edu">albert.latham@aggiemail.usu.edu</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/zo34">
+              <span class="icon  icon--github">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"></path>
+                </svg>
+              </span>
+
+              <span class="username">zo34</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/albertlatham">
+              <span class="icon  icon--twitter">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                  c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"></path>
+                </svg>
+              </span>
+
+              <span class="username">albertlatham</span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">Resume, CV, project log, and blog of aspiring 
+engineer, Albert Latham. Also features troubleshooting tips and 
+solutions for Albert's current projects and interests.
+</p>
+      </div>
+    </div>
+
+  </div>
+	<script src="Jekyll_Octopress%20Shell%20Posting%20Script_files/analytics.js" async=""></script><script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-44756137-2', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+</footer>
+
+
+  
+
+
+</body></html>
