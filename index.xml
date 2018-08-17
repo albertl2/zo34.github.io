@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Create, make, break.</title>
-    <link>albertlatham.com/</link>
+    <link>/</link>
     <description>Recent content on Create, make, break.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 17 Jul 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="albertlatham.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Gluten Free, Dairy Free Brownies</title>
-      <link>albertlatham.com/post/recipes/gfdf-brownies/</link>
+      <link>/post/recipes/gfdf-brownies/</link>
       <pubDate>Tue, 17 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>albertlatham.com/post/recipes/gfdf-brownies/</guid>
+      <guid>/post/recipes/gfdf-brownies/</guid>
       <description>&lt;p&gt;This recipe is an adaptation of a non dairy-free, non gluten-free brownie recipe, and a dairy-free, gluten free blondies recipe. The result is a dairy-free, gluten-free pecan brownie with a salted caramel drizzle.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -24,19 +24,19 @@
     
     <item>
       <title>Modeling a Corner Bracket</title>
-      <link>albertlatham.com/post/i3-printer-modifications/modeling-a-corner-bracket/</link>
+      <link>/post/i3-printer-modifications/modeling-a-corner-bracket/</link>
       <pubDate>Thu, 17 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>albertlatham.com/post/i3-printer-modifications/modeling-a-corner-bracket/</guid>
+      <guid>/post/i3-printer-modifications/modeling-a-corner-bracket/</guid>
       <description>TL;DR - I modeled a corner bracket using Blender in a somewhat parametric manner. If you want to look at the file and see what I did you can find it here. You can also skip down to the modeling section to see exactly what I did. Recently I replaced my Duplicator&amp;rsquo;s Melzi controller with something a little more sane. I&amp;rsquo;ll write a blog post in the future about the dependancy hell required to actually get a Melzi to work but for now, I need a bigger space to put my Smoothieboard in.</description>
     </item>
     
     <item>
       <title>Duplicator I3 Auto-Bed Leveling with a Smoothieboard.</title>
-      <link>albertlatham.com/post/i3-printer-modifications/adding-auto-bed-leveling/</link>
+      <link>/post/i3-printer-modifications/adding-auto-bed-leveling/</link>
       <pubDate>Mon, 15 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>albertlatham.com/post/i3-printer-modifications/adding-auto-bed-leveling/</guid>
+      <guid>/post/i3-printer-modifications/adding-auto-bed-leveling/</guid>
       <description>Thank you for the video, Thomas. I found this video quite a while ago and I decided I&amp;rsquo;d give auto bed-tramming (bed-leveling) a go.
   Final battle with a Melzi. A cursory glance at the Melzi&amp;rsquo;s page on the Reprap website will only begin to illuminate the issues one will face if they attempt to modify the firmware on board in any manner. The Duplicator I3&amp;rsquo;s controller ships with Repetier which didn&amp;rsquo;t support any sort of auto bed-leveling at the time I tried to make this work.</description>
     </item>

@@ -3,127 +3,127 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>albertlatham.com/post/recipes/gfdf-brownies/</loc>
+    <loc>/post/recipes/gfdf-brownies/</loc>
     <lastmod>2018-07-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>albertlatham.com/post/recipes/</loc>
+    <loc>/post/recipes/</loc>
     <lastmod>2017-07-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>albertlatham.com/post/i3-printer-modifications/modeling-a-corner-bracket/</loc>
+    <loc>/post/i3-printer-modifications/modeling-a-corner-bracket/</loc>
     <lastmod>2016-11-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>albertlatham.com/post/i3-printer-modifications/adding-auto-bed-leveling/</loc>
+    <loc>/post/i3-printer-modifications/adding-auto-bed-leveling/</loc>
     <lastmod>2016-08-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>albertlatham.com/tags/3d-printing/</loc>
-    <lastmod>2016-08-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>albertlatham.com/tags/3d-printing/</loc>
-    <lastmod>2016-11-17T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>albertlatham.com/categories/build/</loc>
+    <loc>/tags/3d-printing/</loc>
     <lastmod>2016-08-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>albertlatham.com/tags/cad/</loc>
+    <loc>/tags/3d-printing/</loc>
     <lastmod>2016-11-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>albertlatham.com/categories/</loc>
+    <loc>/categories/build/</loc>
     <lastmod>2016-08-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>albertlatham.com/tags/chocolate/</loc>
-    <lastmod>2018-07-17T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>albertlatham.com/contact/</loc>
-  </url>
-  
-  <url>
-    <loc>albertlatham.com/</loc>
-    <lastmod>2018-07-17T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>albertlatham.com/tags/dairy-free/</loc>
-    <lastmod>2018-07-17T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>albertlatham.com/categories/design/</loc>
+    <loc>/tags/cad/</loc>
     <lastmod>2016-11-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>albertlatham.com/tags/dessert/</loc>
-    <lastmod>2018-07-17T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>albertlatham.com/tags/duplicator-i3/</loc>
-    <lastmod>2016-11-17T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>albertlatham.com/tags/gluten-free/</loc>
-    <lastmod>2018-07-17T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>albertlatham.com/tags/hardware-hacking/</loc>
+    <loc>/categories/</loc>
     <lastmod>2016-08-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>albertlatham.com/post/</loc>
-    <lastmod>2016-11-17T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>albertlatham.com/categories/recipes/</loc>
+    <loc>/tags/chocolate/</loc>
     <lastmod>2018-07-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>albertlatham.com/tags/</loc>
+    <loc>/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2018-07-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/dairy-free/</loc>
+    <lastmod>2018-07-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/design/</loc>
+    <lastmod>2016-11-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/dessert/</loc>
+    <lastmod>2018-07-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/duplicator-i3/</loc>
+    <lastmod>2016-11-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/gluten-free/</loc>
+    <lastmod>2018-07-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/hardware-hacking/</loc>
     <lastmod>2016-08-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>albertlatham.com/tags/wanhao-i3/</loc>
+    <loc>/post/</loc>
+    <lastmod>2016-11-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/recipes/</loc>
+    <lastmod>2018-07-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2016-08-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/wanhao-i3/</loc>
     <lastmod>2016-08-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

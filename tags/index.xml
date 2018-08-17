@@ -2,102 +2,102 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Create, make, break.</title>
-    <link>albertlatham.com/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on Create, make, break.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 15 Aug 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="albertlatham.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>3D printing</title>
-      <link>albertlatham.com/tags/3d-printing/</link>
+      <link>/tags/3d-printing/</link>
       <pubDate>Mon, 15 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>albertlatham.com/tags/3d-printing/</guid>
+      <guid>/tags/3d-printing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>3d printing</title>
-      <link>albertlatham.com/tags/3d-printing/</link>
+      <link>/tags/3d-printing/</link>
       <pubDate>Thu, 17 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>albertlatham.com/tags/3d-printing/</guid>
+      <guid>/tags/3d-printing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>CAD</title>
-      <link>albertlatham.com/tags/cad/</link>
+      <link>/tags/cad/</link>
       <pubDate>Thu, 17 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>albertlatham.com/tags/cad/</guid>
+      <guid>/tags/cad/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Chocolate</title>
-      <link>albertlatham.com/tags/chocolate/</link>
+      <link>/tags/chocolate/</link>
       <pubDate>Tue, 17 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>albertlatham.com/tags/chocolate/</guid>
+      <guid>/tags/chocolate/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Dairy free</title>
-      <link>albertlatham.com/tags/dairy-free/</link>
+      <link>/tags/dairy-free/</link>
       <pubDate>Tue, 17 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>albertlatham.com/tags/dairy-free/</guid>
+      <guid>/tags/dairy-free/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Dessert</title>
-      <link>albertlatham.com/tags/dessert/</link>
+      <link>/tags/dessert/</link>
       <pubDate>Tue, 17 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>albertlatham.com/tags/dessert/</guid>
+      <guid>/tags/dessert/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Duplicator i3</title>
-      <link>albertlatham.com/tags/duplicator-i3/</link>
+      <link>/tags/duplicator-i3/</link>
       <pubDate>Thu, 17 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>albertlatham.com/tags/duplicator-i3/</guid>
+      <guid>/tags/duplicator-i3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Gluten free</title>
-      <link>albertlatham.com/tags/gluten-free/</link>
+      <link>/tags/gluten-free/</link>
       <pubDate>Tue, 17 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>albertlatham.com/tags/gluten-free/</guid>
+      <guid>/tags/gluten-free/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hardware hacking</title>
-      <link>albertlatham.com/tags/hardware-hacking/</link>
+      <link>/tags/hardware-hacking/</link>
       <pubDate>Mon, 15 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>albertlatham.com/tags/hardware-hacking/</guid>
+      <guid>/tags/hardware-hacking/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Wanhao I3</title>
-      <link>albertlatham.com/tags/wanhao-i3/</link>
+      <link>/tags/wanhao-i3/</link>
       <pubDate>Mon, 15 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>albertlatham.com/tags/wanhao-i3/</guid>
+      <guid>/tags/wanhao-i3/</guid>
       <description></description>
     </item>
     

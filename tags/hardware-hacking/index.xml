@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hardware hacking on Create, make, break.</title>
-    <link>albertlatham.com/tags/hardware-hacking/</link>
+    <link>/tags/hardware-hacking/</link>
     <description>Recent content in Hardware hacking on Create, make, break.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 15 Aug 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="albertlatham.com/tags/hardware-hacking/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/hardware-hacking/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Duplicator I3 Auto-Bed Leveling with a Smoothieboard.</title>
-      <link>albertlatham.com/post/i3-printer-modifications/adding-auto-bed-leveling/</link>
+      <link>/post/i3-printer-modifications/adding-auto-bed-leveling/</link>
       <pubDate>Mon, 15 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>albertlatham.com/post/i3-printer-modifications/adding-auto-bed-leveling/</guid>
+      <guid>/post/i3-printer-modifications/adding-auto-bed-leveling/</guid>
       <description>Thank you for the video, Thomas. I found this video quite a while ago and I decided I&amp;rsquo;d give auto bed-tramming (bed-leveling) a go.
   Final battle with a Melzi. A cursory glance at the Melzi&amp;rsquo;s page on the Reprap website will only begin to illuminate the issues one will face if they attempt to modify the firmware on board in any manner. The Duplicator I3&amp;rsquo;s controller ships with Repetier which didn&amp;rsquo;t support any sort of auto bed-leveling at the time I tried to make this work.</description>
     </item>
