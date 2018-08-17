@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>recipes on Create, make, break.</title>
-    <link>/post/recipes/</link>
+    <link>http://albertlatham.com/post/recipes/</link>
     <description>Recent content in recipes on Create, make, break.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 17 Jul 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/post/recipes/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://albertlatham.com/post/recipes/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Gluten Free, Dairy Free Brownies</title>
-      <link>/post/recipes/gfdf-brownies/</link>
+      <link>http://albertlatham.com/post/recipes/gfdf-brownies/</link>
       <pubDate>Tue, 17 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/recipes/gfdf-brownies/</guid>
+      <guid>http://albertlatham.com/post/recipes/gfdf-brownies/</guid>
       <description>&lt;p&gt;This recipe is an adaptation of a non dairy-free, non gluten-free brownie recipe, and a dairy-free, gluten free blondies recipe. The result is a dairy-free, gluten-free pecan brownie with a salted caramel drizzle.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

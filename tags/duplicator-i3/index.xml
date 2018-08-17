@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Duplicator i3 on Create, make, break.</title>
-    <link>/tags/duplicator-i3/</link>
+    <link>http://albertlatham.com/tags/duplicator-i3/</link>
     <description>Recent content in Duplicator i3 on Create, make, break.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 17 Nov 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/duplicator-i3/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://albertlatham.com/tags/duplicator-i3/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Modeling a Corner Bracket</title>
-      <link>/post/i3-printer-modifications/modeling-a-corner-bracket/</link>
+      <link>http://albertlatham.com/post/i3-printer-modifications/modeling-a-corner-bracket/</link>
       <pubDate>Thu, 17 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>/post/i3-printer-modifications/modeling-a-corner-bracket/</guid>
+      <guid>http://albertlatham.com/post/i3-printer-modifications/modeling-a-corner-bracket/</guid>
       <description>TL;DR - I modeled a corner bracket using Blender in a somewhat parametric manner. If you want to look at the file and see what I did you can find it here. You can also skip down to the modeling section to see exactly what I did. Recently I replaced my Duplicator&amp;rsquo;s Melzi controller with something a little more sane. I&amp;rsquo;ll write a blog post in the future about the dependancy hell required to actually get a Melzi to work but for now, I need a bigger space to put my Smoothieboard in.</description>
     </item>
     

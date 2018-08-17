@@ -2,102 +2,102 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Create, make, break.</title>
-    <link>/tags/</link>
+    <link>http://albertlatham.com/tags/</link>
     <description>Recent content in Tags on Create, make, break.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 15 Aug 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://albertlatham.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>3D printing</title>
-      <link>/tags/3d-printing/</link>
+      <link>http://albertlatham.com/tags/3d-printing/</link>
       <pubDate>Mon, 15 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/3d-printing/</guid>
+      <guid>http://albertlatham.com/tags/3d-printing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>3d printing</title>
-      <link>/tags/3d-printing/</link>
+      <link>http://albertlatham.com/tags/3d-printing/</link>
       <pubDate>Thu, 17 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/3d-printing/</guid>
+      <guid>http://albertlatham.com/tags/3d-printing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>CAD</title>
-      <link>/tags/cad/</link>
+      <link>http://albertlatham.com/tags/cad/</link>
       <pubDate>Thu, 17 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/cad/</guid>
+      <guid>http://albertlatham.com/tags/cad/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Chocolate</title>
-      <link>/tags/chocolate/</link>
+      <link>http://albertlatham.com/tags/chocolate/</link>
       <pubDate>Tue, 17 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/chocolate/</guid>
+      <guid>http://albertlatham.com/tags/chocolate/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Dairy free</title>
-      <link>/tags/dairy-free/</link>
+      <link>http://albertlatham.com/tags/dairy-free/</link>
       <pubDate>Tue, 17 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/dairy-free/</guid>
+      <guid>http://albertlatham.com/tags/dairy-free/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Dessert</title>
-      <link>/tags/dessert/</link>
+      <link>http://albertlatham.com/tags/dessert/</link>
       <pubDate>Tue, 17 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/dessert/</guid>
+      <guid>http://albertlatham.com/tags/dessert/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Duplicator i3</title>
-      <link>/tags/duplicator-i3/</link>
+      <link>http://albertlatham.com/tags/duplicator-i3/</link>
       <pubDate>Thu, 17 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/duplicator-i3/</guid>
+      <guid>http://albertlatham.com/tags/duplicator-i3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Gluten free</title>
-      <link>/tags/gluten-free/</link>
+      <link>http://albertlatham.com/tags/gluten-free/</link>
       <pubDate>Tue, 17 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/gluten-free/</guid>
+      <guid>http://albertlatham.com/tags/gluten-free/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hardware hacking</title>
-      <link>/tags/hardware-hacking/</link>
+      <link>http://albertlatham.com/tags/hardware-hacking/</link>
       <pubDate>Mon, 15 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/hardware-hacking/</guid>
+      <guid>http://albertlatham.com/tags/hardware-hacking/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Wanhao I3</title>
-      <link>/tags/wanhao-i3/</link>
+      <link>http://albertlatham.com/tags/wanhao-i3/</link>
       <pubDate>Mon, 15 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/wanhao-i3/</guid>
+      <guid>http://albertlatham.com/tags/wanhao-i3/</guid>
       <description></description>
     </item>
     
