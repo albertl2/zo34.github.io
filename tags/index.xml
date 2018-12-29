@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Create, make, break.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 15 Aug 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 28 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://albertlatham.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2018</title>
+      <link>http://albertlatham.com/tags/2018/</link>
+      <pubDate>Fri, 28 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://albertlatham.com/tags/2018/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>3D printing</title>
@@ -39,7 +48,16 @@
     </item>
     
     <item>
-      <title>Chocolate</title>
+      <title>Wanhao I3</title>
+      <link>http://albertlatham.com/tags/wanhao-i3/</link>
+      <pubDate>Mon, 15 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://albertlatham.com/tags/wanhao-i3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>chocolate</title>
       <link>http://albertlatham.com/tags/chocolate/</link>
       <pubDate>Tue, 17 Jul 2018 00:00:00 +0000</pubDate>
       
@@ -48,7 +66,7 @@
     </item>
     
     <item>
-      <title>Dairy free</title>
+      <title>dairy free</title>
       <link>http://albertlatham.com/tags/dairy-free/</link>
       <pubDate>Tue, 17 Jul 2018 00:00:00 +0000</pubDate>
       
@@ -57,7 +75,7 @@
     </item>
     
     <item>
-      <title>Dessert</title>
+      <title>dessert</title>
       <link>http://albertlatham.com/tags/dessert/</link>
       <pubDate>Tue, 17 Jul 2018 00:00:00 +0000</pubDate>
       
@@ -66,7 +84,7 @@
     </item>
     
     <item>
-      <title>Duplicator i3</title>
+      <title>duplicator i3</title>
       <link>http://albertlatham.com/tags/duplicator-i3/</link>
       <pubDate>Thu, 17 Nov 2016 00:00:00 +0000</pubDate>
       
@@ -75,7 +93,7 @@
     </item>
     
     <item>
-      <title>Gluten free</title>
+      <title>gluten free</title>
       <link>http://albertlatham.com/tags/gluten-free/</link>
       <pubDate>Tue, 17 Jul 2018 00:00:00 +0000</pubDate>
       
@@ -84,7 +102,7 @@
     </item>
     
     <item>
-      <title>Hardware hacking</title>
+      <title>hardware hacking</title>
       <link>http://albertlatham.com/tags/hardware-hacking/</link>
       <pubDate>Mon, 15 Aug 2016 00:00:00 +0000</pubDate>
       
@@ -93,11 +111,11 @@
     </item>
     
     <item>
-      <title>Wanhao I3</title>
-      <link>http://albertlatham.com/tags/wanhao-i3/</link>
-      <pubDate>Mon, 15 Aug 2016 00:00:00 +0000</pubDate>
+      <title>year in review</title>
+      <link>http://albertlatham.com/tags/year-in-review/</link>
+      <pubDate>Fri, 28 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://albertlatham.com/tags/wanhao-i3/</guid>
+      <guid>http://albertlatham.com/tags/year-in-review/</guid>
       <description></description>
     </item>
     

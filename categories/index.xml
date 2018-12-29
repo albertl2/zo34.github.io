@@ -6,13 +6,12 @@
     <description>Recent content in Categories on Create, make, break.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 15 Aug 2016 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://albertlatham.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Build</title>
+      <title>build</title>
       <link>http://albertlatham.com/categories/build/</link>
       <pubDate>Mon, 15 Aug 2016 00:00:00 +0000</pubDate>
       
@@ -21,7 +20,7 @@
     </item>
     
     <item>
-      <title>Design</title>
+      <title>design</title>
       <link>http://albertlatham.com/categories/design/</link>
       <pubDate>Thu, 17 Nov 2016 00:00:00 +0000</pubDate>
       
@@ -30,7 +29,16 @@
     </item>
     
     <item>
-      <title>Recipes</title>
+      <title>naval gazing</title>
+      <link>http://albertlatham.com/categories/naval-gazing/</link>
+      <pubDate>Fri, 28 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://albertlatham.com/categories/naval-gazing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>recipes</title>
       <link>http://albertlatham.com/categories/recipes/</link>
       <pubDate>Tue, 17 Jul 2018 00:00:00 +0000</pubDate>
       

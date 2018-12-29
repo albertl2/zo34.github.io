@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Create, make, break.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 17 Nov 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 28 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://albertlatham.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Goodbye 2018</title>
+      <link>http://albertlatham.com/post/goodbye-2018/</link>
+      <pubDate>Fri, 28 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://albertlatham.com/post/goodbye-2018/</guid>
+      <description>Great things that happened this year.  I got to see family for almost an entire month. I did well in Spring, Summer, and Fall sessions of school. I learned that it is ok to feel bad, alone, sick. I (re)learned that God does His work even when I don&amp;rsquo;t feel or see anything. I worked a couple of interesting jobs (barista, vehicle lift maint./installer). I changed my degree path to computer science!</description>
+    </item>
     
     <item>
       <title>Modeling a Corner Bracket</title>
